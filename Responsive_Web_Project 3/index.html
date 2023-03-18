@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Kotlin Documentation</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>Kotlin Documentation</header>
+        <ul class="link">
+            <li><a href="#Get_Started" class="nav-link">Get Started</a></li>
+            <li><a href="#Basic" class="nav-link">Basic</a></li>
+            <li><a href="#Comparison_to_Java" class="nav-link">Comparison to Java</a></li>
+            <li><a href="#Hello_World" class="nav-link">Hello World</a></li>
+            <li><a href="#Variables" class="nav-link">Variables</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Get_Started">
+            <header>Get Started</header>
+            <div class="content">
+                <p>Kotlin is a modern but already mature programming language aimed to make developers happier. It's concise, safe, interoperable with Java and other languages, and provides many ways to reuse code between multiple platforms for productive programming.
+
+                    Pick it up to start building powerful applications!</p>
+                <h2>Lean Kotlin fundamentals</h2>
+                <ul>
+                    <li>If you're already familiar with one or more programming languages and want to learn Kotlin, start with these Kotlin learning materials.</li>
+                    <li>If Kotlin is your first programming language, we recommend starting with the Atomic Kotlin book or signing up for the free Kotlin Basics track on JetBrains Academy.</li>
+                </ul>
+            </div>
+        </section>
+        <section class="main-section" id="Basic">
+            <header>Basic</header>
+            <div class="content">
+                <p>This is a collection of basic syntax elements with examples. At the end of every section, you'll find a link to a detailed description of the related topic.
+
+                    You can also learn all the Kotlin essentials with the free Kotlin Basics track on JetBrains Academy.</p>
+                <h2>Package definition and imports</h2>
+                <p>Package spesification should be at the top of the source file.</p>
+                <code>package my.demo
+                
+                    import kotlin.text.*
+                    
+                    // ...
+                </code>
+                <p>It is not required to match directories and packages: source files can be placed arbitrarily in the file system.</p>
+            </div>
+        </section>
+        <section class="main-section" id="Comparison_to_Java">
+            <header>Comparison to Java</header>
+            <div class="content">
+                <p>Kotlin fixes a series of issues that Java suffers from:</p>
+                <ul>
+                    <li>Null references are controlled by the type system.</li>
+                    <li>No raw types.</li>
+                    <li>Arrays in Kotlin are invariant.</li>
+                    <li>Kotlin has proper function types, as opposed to Java's SAM-conversions.</li>
+                    <li>Use-site variance without wildcards.</li>
+                    <li>Kotlin does not have checked exceptions.</li>
+                </ul>
+            </div>
+        </section>
+        <section class="main-section" id="Hello_World">
+            <header>Hello World</header>
+            <div class="content">
+                <p>Hello, World! is the first basic program in any programming language. Let’s write the first program in Kotlin programming language.</p>
+                <p>The “Hello, World!” program in Kotlin: Open your favorite editor notepad or notepad++ and create a file named firstapp.kt with the following code. </p>
+                <code>// Kotlin Hello World Program<br>
+                    fun main(args: Array&#60;String&#62;) {<br>
+                    &emsp;println("Hello, World!")
+                    }</code>
+                <p>You can compile the program in the command-line compiler. </p>
+                <code>$&emsp;kotlinc helloworld.kt</code>
+                <p>Now, run the program to see the output </p>
+            </div>
+        </section>
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <div class="content">
+                <p>Variables are containers for storing data values. <br>To create a variable, use <span>var</span> or <span>val</span> and assign a value with the equal sign (=)</p>
+                <code>var variableName = value<br>
+                val variableName = value</code>
+                <h3>Example</h3>
+                <code>var name = "John"<br>
+                    val birthyear = 1975<br>
+                    <br>
+                    println(name)          // Print the value of name<br>
+                    println(birthyear)     // Print the value of birthyear</code>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Garb Survey Form</h1>
+            <p id="description">Kindly fill this survey form so that we can improve your experience with Garb</p>
+        </header>
+        <form id="survey-form" action="" method="post">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" class="form-control" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" class="form-control" name="email" placeholder="your@mail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Age</label>
+                <input type="number" id="number" class="form-control" name="age" min="13" max="120" placeholder="Your age" required>
+            </div>
+            <div class="form-group">
+                <label for="option">Which option describe your current role?</label>
+                <select name="role" id="dropdown" class="form-control">
+                    <option value="">(Select one)</option>
+                    <option value="Driver">Driver</option>
+                    <option value="Customer">Customer</option>
+                    <option value="Admin">Admin</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Would you recommend our service?</p>
+                <label>
+                <input type="radio" name="user-recommend" class="input-radio" value="absolutely" id="absolutely" checked>
+                Absolutely</label>
+                <label>
+                <input type="radio" name="user-recommend" class="input-radio" value="maybe" id="maybe">
+                Maybe</label>
+                <label>
+                <input type="radio" name="user-recommend" class="input-radio" value="not-sure" id="not-sure">
+                Not sure</label>
+            </div>
+            <div class="form-group">
+                <p>Where did you see our service? <span class="clue">(Check all that apply)</span></p>
+                
+                <label>
+                <input type="checkbox" name="prefer" value="instagram" class="input-checkbox" id="instagram">
+                Instagram</label>
+                <label>
+                <input type="checkbox" name="prefer" value="twitter" class="input-checkbox" id="twitter">
+                Twitter</label>
+                <label>
+                <input type="checkbox" name="prefer" value="facebook" class="input-checkbox" id="facebook">
+                Facebook</label>
+                <label>
+                <input type="checkbox" name="prefer" value="friend" class="input-checkbox" id="friend">
+                Friend</label>
+                <label>
+                <input type="checkbox" name="prefer" value="website" class="input-checkbox" id="website">
+                Garb Website</label>
+            </div>
+            <div class="form-group">
+                <p>Kindly describe your experience or comment about our service</p>
+                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter your comment here"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
